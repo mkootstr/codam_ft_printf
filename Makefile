@@ -18,7 +18,7 @@ $(NAME): $(PRINTF)
 %.o: %.c $(HEADER_FILES)
 	gcc $(CFLAGS) -c $< -o $@
 
-clean: 
+clean:
 	rm -f $(PRINTF)
 	make fclean -C libft/
 fclean: clean
